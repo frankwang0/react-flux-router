@@ -1,1 +1,1 @@
-A simple sample application built using React.js, Flux and React Router.
+A simple sample application built using React.js, Flux and React Router. Inspired by http://www.pluralsight.com/courses/react-flux-building-applications and https://github.com/scotch-io/react-flux-cart.
