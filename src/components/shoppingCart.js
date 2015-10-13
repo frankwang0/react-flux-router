@@ -23,7 +23,7 @@ var ShoppingCart = React.createClass({
 	},
 
 	_onChange: function() {
-		this.setState({ authors: CartStore.getCartItems()});
+		this.setState({ CartItems: CartStore.getCartItems()});
 	},
 
 	removeCartItem: function(index) {
