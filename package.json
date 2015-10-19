@@ -1,16 +1,17 @@
 {
-  "name": "ReactStudy",
+  "name": "FluxSample",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Cory House",
+  "author": "Frank Wang",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.5",
     "browserify": "^10.2.4",
+    "babelify": "^6.3.0",    
     "flux": "^2.0.3",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
