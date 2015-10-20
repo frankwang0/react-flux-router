@@ -13,6 +13,7 @@ var routes = (
     <DefaultRoute handler={require('./components/products')} />
     <Route name="products" handler={require('./components/products')} />
     <Route name="shoppingcart" handler={require('./components/shoppingCart')} />
+    <Route name="about" handler={require('./components/about')} />
   </Route>
 );
 
