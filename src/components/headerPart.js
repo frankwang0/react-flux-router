@@ -4,7 +4,7 @@ var React = require('react');
 var Router = require('react-router');
 var Link = Router.Link;
 
-var Header = React.createClass({
+var HeaderPart = React.createClass({
 	render: function() {
 		return (
         <nav className="navbar navbar-default">
@@ -20,4 +20,4 @@ var Header = React.createClass({
 	}
 });
 
-module.exports = Header;
+module.exports = HeaderPart;

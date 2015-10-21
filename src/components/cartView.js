@@ -7,7 +7,7 @@ var Link = Router.Link;
 var CartStore = require('../stores/cartStore');
 var CartActions = require('../actions/cartActions');
 
-var ShoppingCart = React.createClass({
+var CartView = React.createClass({
 	getInitialState: function() {
 		return {
 			CartItems: CartStore.getCartItems()
@@ -52,4 +52,4 @@ var ShoppingCart = React.createClass({
 	}
 });
 
-module.exports = ShoppingCart;
+module.exports = CartView;

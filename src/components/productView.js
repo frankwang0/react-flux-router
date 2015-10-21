@@ -6,10 +6,10 @@ var Link = Router.Link;
 var toastr = require('toastr');
 
 var ProductStore = require('../stores/productStore');
-var ProductsPartial = require('./productsPartial');
+var ProductPart = require('./productPart');
 var CartActions = require('../actions/cartActions');
 
-var Products = React.createClass({	
+var ProductView = React.createClass({	
 	mixins: [
 		Router.Navigation
 	],
@@ -29,10 +29,10 @@ var Products = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<ProductsPartial products={this.state.products} onAddToCart={this.addToCart}/>
+				<ProductPart products={this.state.products} onAddToCart={this.addToCart} />
 			</div>
 		);
 	}
 });
 
-module.exports = Products;
+module.exports = ProductView;

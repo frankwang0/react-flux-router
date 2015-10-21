@@ -3,7 +3,7 @@
 var React = require('react');
 
 
-var ProductsPartial = React.createClass({
+var ProductPart = React.createClass({
 	propTypes: {
 		products: React.PropTypes.array.isRequired,
 		onAddToCart: React.PropTypes.func.isRequired
@@ -35,4 +35,4 @@ var ProductsPartial = React.createClass({
 	}
 });
 
-module.exports = ProductsPartial;
+module.exports = ProductPart;
