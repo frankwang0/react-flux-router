@@ -1,7 +1,7 @@
 "use strict";
 
 var Dispatcher = require('../dispatcher/appDispatcher');
-var ActionTypes = require('../consts/actionTypes');
+var ActionTypes = require('../constants/actionTypes');
 var CartRepo = require('../repositories/cartRepo');
 
 var CartActions = {

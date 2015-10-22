@@ -4,7 +4,7 @@ var EventEmitter = require('events').EventEmitter;
 var assign = require('object-assign');
 
 var Dispatcher = require('../dispatcher/appDispatcher');
-var ActionTypes = require('../consts/actionTypes');
+var ActionTypes = require('../constants/actionTypes');
 var StoreBase = require('./storeBase');
 
 var _products = [];

@@ -7,7 +7,7 @@ var _ = require('lodash');
 
 var StoreBase = require('./storeBase');
 var Dispatcher = require('../dispatcher/appDispatcher');
-var ActionTypes = require('../consts/ActionTypes');
+var ActionTypes = require('../constants/ActionTypes');
 
 var _cartItems = [];
 
