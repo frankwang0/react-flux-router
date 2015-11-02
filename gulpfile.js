@@ -1,12 +1,14 @@
 "use strict";
 
 var gulp = require('gulp');
+var sourcemaps = require('gulp-sourcemaps');
 var connect = require('gulp-connect'); //Runs a local dev server
 var open = require('gulp-open'); //Open a URL in a web browser
 var browserify = require('browserify'); // Bundles JS
 var babelify = require("babelify");
 var reactify = require('reactify');  // Transforms React JSX to JS
 var source = require('vinyl-source-stream'); // Use conventional text streams with Gulp
+var buffer = require('vinyl-buffer')
 var concat = require('gulp-concat'); //Concatenates files
 var lint = require('gulp-eslint'); //Lint JS files, including JSX
 
@@ -51,11 +53,14 @@ gulp.task('html', function() {
 });
 
 gulp.task('js', function() {
-	browserify(config.paths.mainJs)
+	browserify(config.paths.mainJs, { debug: true })
 		.transform(reactify)
 		.bundle()
 		.on('error', console.error.bind(console))
 		.pipe(source('bundle.js'))
+		.pipe(buffer())
+		.pipe(sourcemaps.init({loadMaps: true}))
+		.pipe(sourcemaps.write('./'))		
 		.pipe(gulp.dest(config.paths.dist + '/scripts'))
 		.pipe(connect.reload());
 });
